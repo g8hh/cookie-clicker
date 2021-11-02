@@ -533,12 +533,12 @@ var gameFunctions =
   },
   importGame: function()
   {
-    let code = prompt("Import your code", "<code>");
+    let code = prompt("粘贴你的存档代码", "<code>");
     loadGame(code);
   },
   hardResetGame: function ()
   {
-    if (prompt("Are you sure that you want to lose all progress that you made? This does not give a Bonus! Type 'WIPE GAME' to confirm.") === "WIPE GAME")
+    if (prompt("您确定要放弃您取得的所有进度吗？ 这是没有奖励的！ 输入 'WIPE GAME' 以确认.") === "WIPE GAME")
     {
       localStorage.removeItem("Ccookieclicker_game");
       window.open(window.location.href, "_blank");
